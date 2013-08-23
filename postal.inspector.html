@@ -3,11 +3,29 @@
 <head>
 	<meta charset="utf-8">
 	<title>Postal Inspector</title>
+	<link href="postal.inspector.css" rel="stylesheet" />
 </head>
 <body>
+	<div class="actions">
+		<button id="refresh">Refresh</button>
+		<button id="clear">Clear</button>
+		Log Size: <span id="log-size"></span>
+	</div>
+	<div class="filters"></div>
+	<div class="viewer">
 	<ul id="messages">
-
 	</ul>
+	</div>
+	<div class="details" style="display: none">
+		<button class="close">X</button>
+		
+		<h2>Envelope</h2>
+		<pre id="envelope-pre"></pre>
+
+		<h2>Data</h2>
+		<pre id="data-pre"></pre>
+	</div>
+	<script src="jquery.js"></script>
 	<script src="postal.inspector.js"></script>
 </body>
 </html>

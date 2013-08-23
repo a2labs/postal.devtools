@@ -1,0 +1,122 @@
+html {
+	height: 100%;
+}
+
+body {
+	background: #fff;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.actions {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 30px;
+	background: #eee;
+}
+
+.filters {
+	position: absolute;
+	top: 30px;
+	left: 0;
+	right: 0;
+	height: 20px;
+	background: #ccc;
+}
+
+.viewer {
+	position: absolute;
+	top: 50px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+}
+
+#messages {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 0.8em;
+}
+
+#messages li {
+	padding: 5px;
+	overflow: hidden;
+}
+
+#messages li:nth-child(2n+1) {
+	background: #eee;
+}
+
+#messages li.selected {
+	background: #aaa !important;
+}
+
+.channel {
+	display: block;
+	width: 15%;
+	float: left;
+	color: #666;
+}
+
+.topic {
+	color: #000;
+	width: 85%;
+	display: block;
+	float: left;
+}
+
+.break {
+	border-bottom: solid 2px #555;
+}
+
+.details {
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 40%;
+	overflow: auto;
+	background: #fff;
+	border-left: solid 2px #000;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.details .close {
+	cursor: pointer;
+	background: none;
+	border: none;
+	position: absolute;
+	border-radius: 10px;
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	line-height: 20px;
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+	top: 10px;
+	right: 10px;
+}
+
+.details h2 {
+	margin: 10px 0 0;
+	padding: 0 0 3px;
+	font-size: 1.4em;
+}
+
+.details pre {
+	margin: 0 0 0 0;
+	background: #eee;
+	padding: 5px;
+}
